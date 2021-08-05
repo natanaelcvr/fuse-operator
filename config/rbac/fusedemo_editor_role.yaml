@@ -1,0 +1,24 @@
+# permissions for end users to edit fusedemoes.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: fusedemo-editor-role
+rules:
+- apiGroups:
+  - fuse.github.com
+  resources:
+  - fusedemoes
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - fuse.github.com
+  resources:
+  - fusedemoes/status
+  verbs:
+  - get

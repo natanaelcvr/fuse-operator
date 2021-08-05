@@ -1,0 +1,7 @@
+apiVersion: fuse.github.com/v1
+kind: FuseDemo
+metadata:
+  name: fusedemo-sample
+spec:
+  # Add fields here
+  foo: bar
